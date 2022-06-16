@@ -15,7 +15,7 @@ app.use(express.json({ extended: false }));
 app.use(express.urlencoded());
 
 app.get("/", (req, res) => {
-  res.json({ msg: "Hello, This is backend" });
+  res.send("Hello, This is back end" );
 });
 
 const PORT = process.env.PORT || 5000;
